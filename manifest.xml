@@ -39,7 +39,7 @@
     <Host Name="Workbook" />
   </Hosts>
   <DefaultSettings>
-    <SourceLocation DefaultValue="http://localhost:4200/index.html" />
+    <SourceLocation DefaultValue="http://localhost:4200/" />
   </DefaultSettings>
   <!-- End TaskPane Mode integration.  -->
 
@@ -124,7 +124,7 @@
         <bt:Image id="Contoso.tpicon_80x80" DefaultValue="http://localhost:4200/assets/icon-80.png" />
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Contoso.Taskpane.Url" DefaultValue="http://localhost:4200/index.html" />
+        <bt:Url id="Contoso.Taskpane.Url" DefaultValue="http://localhost:4200/" />
         <bt:Url id="Contoso.GetStarted.LearnMoreUrl" DefaultValue="http://go.microsoft.com/fwlink/?LinkId=276812" />
         <bt:Url id="Contoso.DesktopFunctionFile.Url" DefaultValue="http://localhost:4200/function-file/function-file.html" />
       </bt:Urls>

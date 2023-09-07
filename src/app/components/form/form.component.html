@@ -1,0 +1,7 @@
+<form #myForm="ngForm" (ngSubmit)="changeColor()">
+  <mat-form-field appearance="outline">
+    <mat-label>Number</mat-label>
+    <input matInput placeholder="Number Identifier" name="number" [(ngModel)]="number"/>
+  </mat-form-field>
+  <button mat-flat-button color="primary" type="submit">Change color</button>
+</form>
