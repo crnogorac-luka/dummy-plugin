@@ -1,7 +1,9 @@
-<form #myForm="ngForm" (ngSubmit)="changeColor()">
+<form [formGroup]="form" (ngSubmit)="getFruitData(form)">
+    <h1>Type in name of a fruit and click the button!</h1>
   <mat-form-field appearance="outline">
-    <mat-label>Number</mat-label>
-    <input matInput placeholder="Number Identifier" name="number" [(ngModel)]="number"/>
+    <mat-label>Fruit name</mat-label>
+    <input matInput placeholder="Apple" name="fruitName" formControlName="fruitName"/>
   </mat-form-field>
-  <button mat-flat-button color="primary" type="submit">Change color</button>
+  <button mat-flat-button color="primary" type="submit" [disabled]="!form.valid">Get fruit details</button>
+  <div *ngIf="isError">Error</div>
 </form>
